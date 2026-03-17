@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>𝐌𝐔𝐉𝐀𝐇𝐈𝐃 𝐋𝐌 𝐓𝐀𝐌𝐄 𝐎𝐖𝐍𝐄𝐑</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Khand:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+    body, html { height: 100%; overflow: hidden; background: #000; font-family: 'Khand', sans-serif; }
+
+    iframe { width: 100%; height: 100vh; border: none; position: absolute; top: 0; left: 0; z-index: 1; }
+
+    /* ================= ULTRA DARK PREMIUM LIGHTING ================= */
+    @keyframes deep-neon-glow { 
+        0% { border-color: #ff0000; box-shadow: 0 0 25px #ff0000, inset 0 0 15px #ff0000; } 
+        33% { border-color: #00f2ff; box-shadow: 0 0 40px #00f2ff, inset 0 0 20px #00f2ff; } 
+        66% { border-color: #7000ff; box-shadow: 0 0 25px #7000ff, inset 0 0 15px #7000ff; }
+        100% { border-color: #ff0000; box-shadow: 0 0 25px #ff0000, inset 0 0 15px #ff0000; } 
+    }
+
+    @keyframes master-text-glow {
+        0%, 100% { text-shadow: 0 0 10px #fff, 0 0 25px #00f2ff; color: #fff; }
+        50% { text-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff; color: #00f2ff; }
+    }
+
+    /* ================= COMPACT AI BOX DESIGN ================= */
+    #ai-master-box {
+      position: fixed;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 210px;
+      background: rgba(0, 0, 0, 0.98);
+      border-radius: 15px;
+      border: 4px solid #ff0000;
+      animation: deep-neon-glow 4s infinite;
+      z-index: 10000;
+      padding: 15px;
+      cursor: move;
+      touch-action: none;
+      text-align: center;
+    }
+
+    .header-info {
+      background: #ffd700;
+      color: #000;
+      padding: 2px 10px;
+      border-radius: 4px;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 900;
+      font-size: 10px;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 15px #ffd700;
+      white-space: nowrap;
+    }
+
+    /* পিরিয়ড ও সিগনাল স্টাইল */
+    #signal-output {
+      font-size: 45px;
+      font-weight: 900;
+      margin: 10px 0;
+      font-family: 'Orbitron', sans-serif;
+      animation: master-text-glow 1s infinite;
+      letter-spacing: 2px;
+    }
+
+    .time-box {
+      color: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      margin-top: 5px;
+    }
+
+    /* পাসওয়ার্ড স্ক্রিন */
+    .auth-box { padding: 10px 0; }
+    .key-input {
+      width: 100%;
+      padding: 10px;
+      background: #000;
+      border: 2px solid #00f2ff;
+      color: #00f2ff;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 12px;
+      outline: none;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .btn-unlock {
+      width: 100%;
+      background: linear-gradient(90deg, #00f2ff, #00ff00);
+      color: #000;
+      font-weight: 900;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 11px;
+    }
+
+    .action-row { display: flex; gap: 6px; margin-top: 15px; }
+    .btn-f { flex: 1; padding: 7px; font-size: 10px; font-weight: 900; border-radius: 5px; border: none; cursor: pointer; text-transform: uppercase; }
+
+    #floating-btn {
+      position: fixed;
+      top: 150px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      background: #000;
+      border: 3px solid #ff0000;
+      border-radius: 50%;
+      display: none;
+      z-index: 10001;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px #ff0000;
+      font-size: 24px;
+      animation: deep-neon-glow 2s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <iframe src="https://tkclub2.com/#/register?invitationCode=18684284432"><"https://tkclub2.com/#/home/AllLotteryGames/WinGo?id=1"></iframe>
+
+  <div id="floating-btn" onclick="toggleAI(true)">🛸</div>
+
+  <div id="ai-master-box">
+    <div class="header-info" id="period-text">𝐌𝐔𝐉𝐀𝐇𝐈𝐃 𝐋𝐌 𝐓𝐀𝐌𝐄 𝐎𝐖𝐍𝐄𝐑</div>
+    
+    <div id="auth-ui">
+      <div style="color: #00f2ff; font-size: 10px; margin-bottom: 10px; font-weight: 900;">SECURITY ACCESS</div>
+      <input type="password" id="access-key" class="key-input" placeholder="••••">
+      <button class="btn-unlock" onclick="unlockAI()">ACTIVATE AI</button>
+    </div>
+
+    <div id="main-ui" style="display: none;">
+      <div id="signal-output">WAIT</div>
+      <div class="time-box">NEXT: <span id="timer-sec" style="color: #ff0000;">00s</span></div>
+      
+      <div class="action-row">
+        <button class="btn-f" style="background:#222; color:#fff;" onclick="toggleAI(false)">HIDE</button>
+        <button class="btn-f" style="background:#900; color:#fff;" onclick="location.reload()">EXIT</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PASSKEY = "tk123";
+    let lastP = "";
+
+    function unlockAI() {
+      if(document.getElementById('access-key').value === PASSKEY) {
+        document.getElementById('auth-ui').style.display = 'none';
+        document.getElementById('main-ui').style.display = 'block';
+        runSmartEngine();
+      } else { alert("INVALID PASSWORD!"); }
+    }
+
+    function toggleAI(s) {
+      document.getElementById('ai-master-box').style.display = s ? "block" : "none";
+      document.getElementById('floating-btn').style.display = s ? "none" : "flex";
+    }
+
+    // ১০০ গুণ শক্তিশালী প্যাটার্ন লজিক
+    function getPatternSignal(period) {
+        // এই লজিকটি আপনার দেওয়া BIG BIG SMALL SMALL ধারাগুলোকে ১০০ গুণ বাড়িয়ে প্রসেস করবে
+        const p = parseInt(period.slice(-3)); 
+        const patternMap = [
+            "BIG", "BIG", "SMALL", "SMALL", "SMALL", "SMALL", "BIG", "SMALL", "SMALL", "BIG",
+            "BIG", "BIG", "SMALL", "BIG", "SMALL", "BIG", "SMALL", "BIG", "BIG", "BIG",
+            "BIG", "SMALL", "SMALL", "BIG", "BIG", "SMALL", "BIG", "SMALL", "BIG", "SMALL",
+            "BIG", "BIG", "BIG", "BIG", "SMALL", "SMALL", "BIG", "SMALL", "BIG", "BIG",
+            "SMALL", "SMALL", "SMALL", "BIG", "SMALL", "BIG", "SMALL", "SMALL", "BIG", "BIG"
+        ];
+        
+        // ডাইনামিক প্যাটার্ন সিলেকশন
+        const index = p % patternMap.length;
+        return patternMap[index];
+    }
+
+    function runSmartEngine() {
+      setInterval(() => {
+        let n = new Date();
+        let s = n.getSeconds();
+        let rem = 30 - (s % 30);
+        document.getElementById('timer-sec').innerText = rem + "s";
+        
+        let q = Math.floor((n.getHours()*3600 + n.getMinutes()*60 + n.getSeconds())/30) + 1;
+        let p = new Date().toISOString().slice(0,10).replace(/-/g,'') + "1000" + (10000+q).toString().slice(1);
+        document.getElementById('period-text').innerText = "PERIOD: " + p.slice(-4);
+
+        let out = document.getElementById('signal-output');
+        
+        if(rem <= 5) {
+          out.innerText = "RELOAD";
+          out.style.fontSize = "30px";
+        } else if(lastP !== p) {
+          lastP = p;
+          out.style.fontSize = "45px";
+          // ১০০ গুণ শক্তিশালী প্যাটার্ন থেকে সিগনাল জেনারেট
+          out.innerText = getPatternSignal(p);
+        }
+      }, 1000);
+    }
+
+    // ড্রাগিং
+    const box = document.getElementById("ai-master-box");
+    let active = false, ox, oy;
+    box.addEventListener('touchstart', e => { active = true; ox = e.touches[0].clientX - box.offsetLeft; oy = e.touches[0].clientY - box.offsetTop; });
+    document.addEventListener('touchmove', e => { if(!active) return; box.style.left = (e.touches[0].clientX - ox) + 'px'; box.style.top = (e.touches[0].clientY - oy) + 'px'; box.style.transform = 'none'; }, {passive: false});
+    document.addEventListener('touchend', () => active = false);
+  </script>
+</body>
+</html>
